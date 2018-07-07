@@ -21,3 +21,4 @@
 - content-type这一类参数
 - 生成器
 - 文件上传
+- bind call apply
