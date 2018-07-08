@@ -33,4 +33,4 @@ main().then(function (value) {
     console.log(error);
 });
 
-// 返回
+// promise.all里的每个promise会同时开始执行，而且每个promise的结果（resolve或reject时传递的参数值），和传递给 Promise.all 的promise数组的顺序是一致的
