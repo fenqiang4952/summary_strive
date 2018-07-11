@@ -8,16 +8,28 @@
     <style>
         .hide {
             display: none;
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-55%);
+            opacity: 0;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 10px #999999;
+            transition: all 2s;
+            
+        }
+        .show {
+            opacity: 1;
+            transform: translate(-50%,-50%);
+            display: block;
         }
     </style>
 </head>
 <body>
-
-    <div class="hide">
-
-        <button class="cancleBtn">取消</button>
-        <button class="sureBtn">确定</button>
-    </div>
+    <button id="tan">tantan</button>
+    
     <script src="./modal.js"></script>
     <script src="./index.js"></script>
 </body>

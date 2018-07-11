@@ -1,13 +1,20 @@
 
-
-
-function cancle() {
-    console.log(1);
+async function test(params) {
+    try {
+        await modal()
+        console.log(8989);
+    } catch (error) {
+        console.log(error);
+    }
+    
 }
-function sure() {
-    console.log(2);
-}
 
-const modal = modal()
-
-modal.then(sure).catch(cancle)
+// function test(params) {
+//     modal().then(() => {
+//         console.log(9090);
+//     }).catch(() => {
+//         console.log(1);
+//     })
+// }
+const tan = document.querySelector('#tan')
+tan.addEventListener('click', test)
